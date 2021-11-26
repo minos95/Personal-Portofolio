@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #d98f07;
+}
+footer form input[type="text"],
+input[type="email"],
+#message {
+  background-color: #f2cb57;
+}
+
+.copy_right {
+  text-align: center;
+  color: white;
+}

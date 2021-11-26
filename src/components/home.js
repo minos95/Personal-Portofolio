@@ -1,12 +1,16 @@
 import React, { Component } from "react";
-console.log("Home");
+
+import { Portfolio, About } from "./";
 const Home = () => {
   return (
     <div>
-      <h1>Hello It's My pffofile</h1>
-      <h4>in this website you will see al my acgeivement</h4>
+      <div className="container-xxl">
+        <div>Home</div>
+        <Portfolio />
+        <About />
+      </div>
     </div>
   );
 };
 
-export default Home;
+export { Home };
