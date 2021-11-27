@@ -31,10 +31,10 @@ const Footer = () => {
                 <h5>+213665326140</h5>
               </nav>
             </nav>
-            <nav className="btn-group">
-              <FaGithub size="38" className="m-1" color="#8D9CA6" />
-              <FaLinkedin size="38" className="m-1" color="#8D9CA6" />
-              <FaTwitter size="38" className="m-1" color="#8D9CA6" />
+            <nav className="btn-group social-media">
+              <FaGithub size="38" className=" icon-social-media m-1" />
+              <FaLinkedin size="38" className="icon-social-media m-1" />
+              <FaTwitter size="38" className="icon-social-media m-1" />
             </nav>
           </div>
           <div className="col p-5">

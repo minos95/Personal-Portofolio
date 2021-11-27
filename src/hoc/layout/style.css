@@ -8,8 +8,83 @@ a {
   text-decoration: none;
 }
 
-footer {
+/*-----------------header---------------------*/
+header {
   position: fixed;
+  width: 100%;
+  opacity: 0.9;
+}
+
+/*------------------home-----------------------*/
+.cover {
+  width: 100%;
+
+  min-height: 100vh;
+  background-color: #f2cb57;
+  color: white;
+}
+.social-media-text {
+  color: black;
+}
+.cover-row {
+  padding-top: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.title {
+  font-size: 52px;
+  color: #8d9ca6;
+}
+.subtitle {
+  color: white;
+  max-width: 600px;
+}
+.arrow-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  animation-name: arrow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes arrow {
+  0% {
+    opacity: 100%;
+    bottom: 0px;
+  }
+  50% {
+    opacity: 30%;
+    bottom: 7px;
+  }
+  100% {
+    opacity: 100%;
+    bottom: 0px;
+  }
+}
+arrow-icon1 {
+}
+.icon-social-media {
+  color: #8d9ca6;
+}
+.icon-social-media:hover {
+  color: black;
+}
+
+/*------------------------portfolio----------------*/
+.portfolio {
+  margin-top: 90px;
+}
+.section {
+  margin-top: 30px;
+}
+.sub-section {
+  min-height: 20vh;
+}
+
+/*--------------------------footer------------------*/
+footer {
   left: 0;
   bottom: 0;
   width: 100%;
