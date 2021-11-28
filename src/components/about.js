@@ -1,13 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
+import {
+  FaReact,
+  FaGithub,
+  FaHtml5,
+  FaPython,
+  FaBootstrap,
+  FaDigitalOcean,
+  FaAws,
+  FaLinux,
+  FaWindows,
+} from "react-icons/fa";
+import {
+  SiFlask,
+  SiJavascript,
+  SiJinja,
+  SiMongodb,
+  SiMysql,
+  SiHeroku,
+  SiAdobephotoshop,
+} from "react-icons/si";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <div className="row">
+    <div className="about">
       <h1 style={{ color: "#8d9ca6" }}>
         <strong>About</strong>
       </h1>
-      <div className="about-row">
-        <div>
+      <div className="about-row ">
+        <div className="about-col " data-aos="fade-right">
           <h5>
             Hello I'm Rahal ElAmine specialised in different Technology like
             React &amp; Redux Flask &amp; jinja,javascript,nodejs,SQL,mongodb,
@@ -15,7 +40,76 @@ const About = () => {
             compagnies,and help them in networking solution,
           </h5>
         </div>
-        <div></div>
+        <div className="about-col">
+          <div className="mb-4">
+            <h4 className="mb-3">
+              <strong>Langage and Framework</strong>
+            </h4>
+
+            <nav className="icon-language " data-aos="fade-left">
+              <FaHtml5 size={60} className="m-2 " />
+              <SiJavascript size={60} className="m-2 " />
+              <FaBootstrap size={60} className="m-2 " />
+              <FaPython size={60} className="m-2 " />
+              <SiJinja size={60} className="m-2 " />
+              <FaReact size={60} className="m-2 " />
+
+              <SiMysql size={60} className="m-2 " />
+              <SiMongodb size={60} className="m-2 " />
+            </nav>
+          </div>
+          <div className="mb-4" data-aos="fade-right" data-aos-delay="500">
+            <h4 className="mb-3">
+              <strong>tools</strong>
+            </h4>
+            <nav>
+              <FaGithub size={60} className="m-2" />
+              <SiHeroku size={60} className="m-2" />
+              <FaDigitalOcean size={60} className="m-2" />
+              <FaAws size={60} className="m-2" />
+              <SiAdobephotoshop size={60} className="m-2" />
+            </nav>
+          </div>
+          <div className="mb-4">
+            <h4 className="mb-6">
+              <strong>Professional</strong>
+            </h4>
+
+            <ul
+              className="about-list"
+              data-aos="flip-right"
+              data-aos-delay="800"
+            >
+              <li className="about-list-item">
+                <p>Remote programming</p>
+              </li>
+              <li className="about-list-item">
+                <p>Teamwork </p>
+              </li>
+              <li className="about-list-item">
+                <p>Global Teams </p>
+              </li>
+              <li className="about-list-item">
+                <p>Communication</p>
+              </li>
+              <li className="about-list-item">
+                <p>Team Building</p>
+              </li>
+              <li className="about-list-item">
+                <p>Problem Solving</p>
+              </li>
+              <li className="about-list-item">
+                <p>Mentoring</p>
+              </li>
+              <li className="about-list-item">
+                <p>Github</p>
+              </li>
+              <li className="about-list-item">
+                <p>Gitlab</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

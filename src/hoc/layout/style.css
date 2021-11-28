@@ -16,11 +16,17 @@ header {
 }
 
 /*------------------home-----------------------*/
+.home {
+  background-image: url("../../assets/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100vh;
+}
 .cover {
   width: 100%;
-
   min-height: 100vh;
-  background-color: #f2cb57;
+  background: rgba(242, 203, 87, 0.9);
+
   color: white;
 }
 .social-media-text {
@@ -81,6 +87,49 @@ arrow-icon1 {
 }
 .sub-section {
   min-height: 20vh;
+}
+
+/*--------------------------About--------------------*/
+.about-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-col {
+  max-width: 600px;
+}
+.about-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.about-list-item {
+  margin-right: 10px;
+}
+.icon-language {
+  display: flex;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /*--------------------------footer------------------*/
