@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
-
+import img from "../assets/logo.png";
 const Header = () => {
   return (
     <header>
@@ -11,7 +11,8 @@ const Header = () => {
         variant="dark"
         className="p-4"
       >
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home"></Navbar.Brand>
+        <img src={img} width="40" height="40" />
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
