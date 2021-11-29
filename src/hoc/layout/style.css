@@ -12,7 +12,7 @@ a {
 header {
   position: fixed;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.99;
 }
 
 /*------------------home-----------------------*/
@@ -20,7 +20,7 @@ header {
   background-image: url("../../assets/background1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 100vh;
+  min-height: 100vh;
 }
 .cover {
   width: 100%;
@@ -87,6 +87,23 @@ arrow-icon1 {
 }
 .sub-section {
   min-height: 20vh;
+}
+.item {
+  position: relative;
+  width: 48%;
+}
+.item img {
+  width: 100%;
+  height: 100%;
+}
+.item-title {
+  position: absolute;
+  margin: 10px;
+}
+.item-subtitle {
+  position: absolute;
+  list-style: none;
+  top: 60px;
 }
 
 /*--------------------------About--------------------*/

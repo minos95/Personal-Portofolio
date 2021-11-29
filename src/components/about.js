@@ -27,7 +27,7 @@ const About = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="about">
+    <div id="about" className="about">
       <h1 style={{ color: "#8d9ca6" }}>
         <strong>About</strong>
       </h1>
@@ -46,7 +46,7 @@ const About = () => {
               <strong>Langage and Framework</strong>
             </h4>
 
-            <nav className="icon-language " data-aos="fade-left">
+            <div className="about-icon " data-aos="fade-right">
               <FaHtml5 size={60} className="m-2 " />
               <SiJavascript size={60} className="m-2 " />
               <FaBootstrap size={60} className="m-2 " />
@@ -56,19 +56,19 @@ const About = () => {
 
               <SiMysql size={60} className="m-2 " />
               <SiMongodb size={60} className="m-2 " />
-            </nav>
+            </div>
           </div>
-          <div className="mb-4" data-aos="fade-right" data-aos-delay="500">
+          <div className="mb-4" data-aos="fade-up" data-aos-delay="500">
             <h4 className="mb-3">
               <strong>tools</strong>
             </h4>
-            <nav>
+            <div className="about-icon">
               <FaGithub size={60} className="m-2" />
               <SiHeroku size={60} className="m-2" />
               <FaDigitalOcean size={60} className="m-2" />
               <FaAws size={60} className="m-2" />
               <SiAdobephotoshop size={60} className="m-2" />
-            </nav>
+            </div>
           </div>
           <div className="mb-4">
             <h4 className="mb-6">

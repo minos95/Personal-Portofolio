@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Container } from "react-bootstrap";
 import {
   FaGithub,
@@ -11,8 +11,9 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
+  const myRef = useRef(null);
   return (
-    <footer className="footer">
+    <footer id="contact" className="footer" ref={myRef}>
       <Container>
         <div className="row">
           <div className="col p-5">

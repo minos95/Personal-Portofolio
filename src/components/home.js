@@ -16,7 +16,7 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <div className="home">
+      <div id="home" className="home">
         <div className="cover ">
           <div className="cover-row ">
             <div className="">
