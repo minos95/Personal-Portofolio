@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import {
   FaGithub,
@@ -9,9 +9,34 @@ import {
   FaPhone,
   FaMap,
 } from "react-icons/fa";
+import Axios from "axios";
 
 const Footer = () => {
   const myRef = useRef(null);
+  const [frommail, setfrommail] = useState("");
+  const [password, setpassword] = useState(0);
+  const [tomail, settomail] = useState("");
+
+  useEffect(() => {
+    Axios.get("http://localhost:3001/read").then((response) => {
+      console.log(response.data);
+    });
+  }, []);
+
+  const sendmail = () => {
+    Axios.post("http://localhost:3001/mail", {
+      frommail: frommail,
+      password: password,
+      tomail: tomail,
+    }).then((response) => {
+      if (response.data.msg === "success") {
+        alert("Email sent, awesome!");
+      } else if (response.data.msg === "fail") {
+        alert("Oops, something went wrong. Try again");
+      }
+    });
+  };
+
   return (
     <footer id="contact" className="footer" ref={myRef}>
       <Container>
@@ -33,13 +58,26 @@ const Footer = () => {
               </nav>
             </nav>
             <nav className="btn-group social-media">
-              <FaGithub size="38" className=" icon-social-media m-1" />
-              <FaLinkedin size="38" className="icon-social-media m-1" />
-              <FaTwitter size="38" className="icon-social-media m-1" />
+              <a href="https://github.com/minos95" target="_blank">
+                <FaGithub size="38" className=" icon-social-media m-1" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sid-ahmed-elamine-rahal-8722541a3/"
+                target="_blank"
+              >
+                <FaLinkedin size="38" className="icon-social-media m-1" />
+              </a>
+              <a href="https://twitter.com/aminos_rahal" target="_blank">
+                <FaTwitter size="38" className="icon-social-media m-1" />
+              </a>
             </nav>
           </div>
           <div className="col p-5">
-            <form>
+            <form
+              action="rahal.aminos@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
               <input
                 type="text"
                 className="form-control form-control-lg mb-2 message"

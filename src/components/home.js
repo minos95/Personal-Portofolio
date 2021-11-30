@@ -44,11 +44,18 @@ const Home = () => {
                   <h4 className="m-2 social-media-text ">
                     My work in social media
                   </h4>
-
-                  <FaGithub size="45" className=" icon-social-media m-1 " />
-
-                  <FaLinkedin size="45" className="icon-social-media m-1" />
-                  <FaTwitter size="45" className="icon-social-media m-1" />
+                  <a href="https://github.com/minos95" target="_blank">
+                    <FaGithub size="45" className=" icon-social-media m-1 " />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/sid-ahmed-elamine-rahal-8722541a3/"
+                    target="_blank"
+                  >
+                    <FaLinkedin size="45" className="icon-social-media m-1" />
+                  </a>
+                  <a href="https://twitter.com/aminos_rahal" target="_blank">
+                    <FaTwitter size="45" className="icon-social-media m-1" />
+                  </a>
                 </nav>
               </div>
             </div>

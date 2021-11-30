@@ -4,15 +4,21 @@ body {
   background-color: white;
 }
 
-a {
-  text-decoration: none;
+a:link {
+  text-decoration: none !important;
+}
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 /*-----------------header---------------------*/
 header {
   position: fixed;
   width: 100%;
-  opacity: 0.99;
+  opacity: 0.9;
+  z-index: 99;
 }
 
 /*------------------home-----------------------*/
@@ -103,9 +109,44 @@ arrow-icon1 {
 .item-subtitle {
   position: absolute;
   list-style: none;
+  padding: 0;
   top: 60px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.item-subtitle-li {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  float: left;
+  color: white;
+  margin-left: 10px;
+  background-color: cornflowerblue;
+}
+.modal-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.modal-col {
+  flex: 1;
 }
 
+.portfolio-modal img {
+  width: 100%;
+}
+
+.modal-button {
+  width: 100%;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: #d98f07;
+}
 /*--------------------------About--------------------*/
 .about-row {
   display: flex;
