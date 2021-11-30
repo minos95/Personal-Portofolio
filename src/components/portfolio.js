@@ -1,5 +1,8 @@
 import React, { List } from "react";
 import { Item } from "./item";
+import cisco from "../assets/items/3tierlabs.png";
+import prs from "../assets/items/screenshotprs.png";
+import scsclinical from "../assets/items/scsclinicalmanagement.jpg";
 
 const Portfolio = () => {
   const itemNetwork = [
@@ -9,9 +12,34 @@ const Portfolio = () => {
       description:
         "3 Tiers Lab with several Cisco's equipents like Router,Switch layer 2, Switch layer 3, in this lab we used OSpf routing to connect different network and static, to enhance the speed and bandwith between the two switch layer 3 employ etherchannel configuration,for avoiding the switch loop we was forced to handle with Stp, the Hsrp protocol has the ability to work with several gateway we apply to increase play the role of loadbalancer  ",
 
-      images: ["../"],
-      github: "https://github.com/minos95/Labs-Cisco-CCNA",
-      live: "khkj",
+      images: [cisco],
+      github: "https://github.com/minos95/clinicalmanagement",
+      live: "",
+    },
+  ];
+  const itemGame = [
+    {
+      title: "Paper Rock Scissor",
+      subtitle: ["Javascript", "Html", "Css"],
+      description:
+        "mini game of Paper Rock Scissors game the player should Win the AI player",
+      images: [prs],
+      github: "https://github.com/minos95/prs",
+      live: "",
+    },
+  ];
+  const itemWeb = [
+    {
+      title: "Clinical management",
+      subtitle: ["Flask", "jinja", "Python", "HTML/CSS", "SQL Alchemy"],
+      description: `For better management of the clinic, This software specially designed to facilitate several tasks and allow you to manage patients (Adding, modifying and deleting), calculate the number of daily, weekly, monthly and annual patients.
+calculate the number of hospitalized patients.
+Add for each patient the assessments carried out as well as the surgical interventions.
+calculate the number of interventions and group them by type, print the patient's consent for each intervention, print the patient file. This application is installed on your local network as a server to which you can connect the entire network architecture 
+of your establishment without forgetting that you can access it even in mobile .`,
+      images: [scsclinical],
+      github: "https://github.com/minos95/prs",
+      live: "",
     },
   ];
   const List = (list) => {
@@ -38,7 +66,7 @@ const Portfolio = () => {
       </h1>
       <div className="section">
         <h2>Web Application</h2>
-        <div className="sub-section"></div>
+        <div className="sub-section">{List(itemWeb)}</div>
       </div>
       <div className="section">
         <h2>Mobile Application</h2>
@@ -54,7 +82,7 @@ const Portfolio = () => {
       </div>
       <div className="section">
         <h2>Games</h2>
-        <div className="sub-section"></div>
+        <div className="sub-section">{List(itemGame)}</div>
       </div>
     </div>
   );

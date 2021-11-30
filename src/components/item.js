@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 import { Img } from "react-image";
 import { FaGithub, FaLink } from "react-icons/fa";
-import cisco from "../assets/items/3tierlabs.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 import { Link } from "react-router-dom";
 const Item = (props) => {
   const [show, setShow] = useState(false);
@@ -14,7 +16,12 @@ const Item = (props) => {
   const handleShow = () => setShow(true);
   return (
     <>
-      <div className="item" onClick={handleShow}>
+      <div
+        className="item"
+        onClick={handleShow}
+        data-aos="fade-up"
+        data-aos-delay="500"
+      >
         <h1 className="item-title">
           <strong>{title}</strong>
         </h1>
@@ -23,7 +30,7 @@ const Item = (props) => {
             return <li className="item-subtitle-li">{item}</li>;
           })}
         </ul>
-        <img src={cisco} />
+        <img src={images[0]} />
       </div>
       <Modal
         show={show}
@@ -36,7 +43,7 @@ const Item = (props) => {
           closeButton
         ></Modal.Header>
         <Modal.Body>
-          <img src={cisco} />
+          <img src={images[0]} />
           <div className="modal-row">
             <div className="modal-col-3">
               <div className="container ">

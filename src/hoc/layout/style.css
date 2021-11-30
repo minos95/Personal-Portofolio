@@ -46,7 +46,7 @@ header {
   justify-content: space-around;
 }
 .title {
-  font-size: 52px;
+  font-size: 6vh;
   color: #8d9ca6;
 }
 .subtitle {
@@ -104,21 +104,23 @@ arrow-icon1 {
 }
 .item-title {
   position: absolute;
-  margin: 10px;
+  font-size: 4vh;
+  margin: 2%;
 }
 .item-subtitle {
   position: absolute;
   list-style: none;
   padding: 0;
-  top: 60px;
+  top: 20%;
   overflow: hidden;
+
   border-radius: 5px;
 }
 .item-subtitle-li {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 3%;
+  padding-right: 3%;
   border-radius: 7px;
-  margin-bottom: 20px;
+  margin-bottom: 2%;
   float: left;
   color: white;
   margin-left: 10px;
