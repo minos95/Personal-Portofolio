@@ -13,7 +13,7 @@ const Portfolio = () => {
         "3 Tiers Lab with several Cisco's equipents like Router,Switch layer 2, Switch layer 3, in this lab we used OSpf routing to connect different network and static, to enhance the speed and bandwith between the two switch layer 3 employ etherchannel configuration,for avoiding the switch loop we was forced to handle with Stp, the Hsrp protocol has the ability to work with several gateway we apply to increase play the role of loadbalancer  ",
 
       images: [cisco],
-      github: "https://github.com/minos95/clinicalmanagement",
+      github: "https://github.com/minos95/Labs-Cisco-CCNA",
       live: "",
     },
   ];
@@ -38,7 +38,7 @@ Add for each patient the assessments carried out as well as the surgical interve
 calculate the number of interventions and group them by type, print the patient's consent for each intervention, print the patient file. This application is installed on your local network as a server to which you can connect the entire network architecture 
 of your establishment without forgetting that you can access it even in mobile .`,
       images: [scsclinical],
-      github: "https://github.com/minos95/prs",
+      github: "https://github.com/minos95/clinicalmanagement",
       live: "",
     },
   ];

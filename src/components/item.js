@@ -64,7 +64,11 @@ const Item = (props) => {
               <div className="container ">
                 {github == "" || github == null ? null : (
                   <button type="button" className="modal-button mb-3">
-                    <a href={github} style={{ textDecoration: "none" }}>
+                    <a
+                      href={github}
+                      style={{ textDecoration: "none" }}
+                      target="_blank"
+                    >
                       <nav className="row" style={{ textDecoration: "none" }}>
                         <nav className="col w-100">Github</nav>
                         <nav className="col">
@@ -75,7 +79,11 @@ const Item = (props) => {
                   </button>
                 )}
                 {live == "" || live == null ? null : (
-                  <button type="button" className="modal-button">
+                  <button
+                    type="button"
+                    className="modal-button"
+                    target="_blank"
+                  >
                     <a href={github} style={{ textDecoration: "none" }}>
                       <nav className="row" style={{ textDecoration: "none" }}>
                         <nav className="col w-100">Link</nav>
