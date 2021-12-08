@@ -3,6 +3,7 @@ import { Item } from "./item";
 import cisco from "../assets/items/3tierlabs.png";
 import prs from "../assets/items/screenshotprs.png";
 import scsclinical from "../assets/items/scsclinicalmanagement.jpg";
+import scsMpls from "../assets/items/screenshotMpls.png";
 
 const Portfolio = () => {
   const itemNetwork = [
@@ -10,10 +11,20 @@ const Portfolio = () => {
       title: "Cisco CCNA Labs",
       subtitle: ["Cisco", "Router", "Vlan", "Switch", "Protocols"],
       description:
-        "3 Tiers Lab with several Cisco's equipents like Router,Switch layer 2, Switch layer 3, in this lab we used OSpf routing to connect different network and static, to enhance the speed and bandwith between the two switch layer 3 employ etherchannel configuration,for avoiding the switch loop we was forced to handle with Stp, the Hsrp protocol has the ability to work with several gateway we apply to increase play the role of loadbalancer  ",
+        "2 Tiers Lab with several Cisco's equipements like Router,Switch layer 2, Switch layer 3, in this lab we used OSPF and static routing to connect different network , to enhance the speed and bandwith between the two switch layer 3 we deploy etherchannel configuration,for avoiding the switch loop we was forced to handle with Stp and the HRSP for the fault-tolerance ",
 
       images: [cisco],
       github: "https://github.com/minos95/Labs-Cisco-CCNA",
+      live: "",
+    },
+    {
+      title: "MPLS Lab",
+      subtitle: ["Cisco", "Router", "BGP", "Switch", "Protocols"],
+      description:
+        "introducing to mpls network for more information visit github link ",
+
+      images: [scsMpls],
+      github: "https://github.com/minos95/MPLS-Lab",
       live: "",
     },
   ];
@@ -44,8 +55,6 @@ of your establishment without forgetting that you can access it even in mobile .
   ];
   const List = (list) => {
     return list.map((item, index) => {
-      console.log("****************");
-      console.log(item);
       return (
         <Item
           key={index}
@@ -74,6 +83,7 @@ of your establishment without forgetting that you can access it even in mobile .
       </div>
       <div className="section">
         <h2>Network</h2>
+
         <div className="sub-section">{List(itemNetwork)}</div>
       </div>
       <div className="section">

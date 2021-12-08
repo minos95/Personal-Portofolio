@@ -21,6 +21,7 @@ const Item = (props) => {
         onClick={handleShow}
         data-aos="fade-up"
         data-aos-delay="500"
+        style={{ marginRight: "20px" }}
       >
         <h1 className="item-title">
           <strong>{title}</strong>
@@ -45,8 +46,8 @@ const Item = (props) => {
         <Modal.Body>
           <img src={images[0]} />
           <div className="modal-row">
-            <div className="modal-col-3">
-              <div className="container ">
+            <div className="modal-col1">
+              <div className="container " style={{ flexDirection: "column" }}>
                 <h4 className="title">
                   <strong>{title}</strong>
                 </h4>
@@ -55,46 +56,43 @@ const Item = (props) => {
                     return <li className="item-subtitle-li">{item}</li>;
                   })}
                 </ul>
-                <h5 style={{ maxWidth: "400px" }}>
-                  <strong>{description}</strong>
-                </h5>
+
+                <div style={{ marginTop: "100px", maxWidth: "500px" }}>
+                  <h5>
+                    <strong>{description}</strong>
+                  </h5>
+                </div>
               </div>
             </div>
-            <div className="modal-col mt-4 ">
-              <div className="container ">
-                {github == "" || github == null ? null : (
-                  <button type="button" className="modal-button mb-3">
-                    <a
-                      href={github}
-                      style={{ textDecoration: "none" }}
-                      target="_blank"
-                    >
-                      <nav className="row" style={{ textDecoration: "none" }}>
-                        <nav className="col w-100">Github</nav>
-                        <nav className="col">
-                          <FaGithub size="20 " style={{ marginLeft: 150 }} />
-                        </nav>
-                      </nav>
-                    </a>
-                  </button>
-                )}
-                {live == "" || live == null ? null : (
-                  <button
-                    type="button"
-                    className="modal-button"
+            <div className="modal-col2  ">
+              {github == "" || github == null ? null : (
+                <button type="button" className="modal-button mb-3 ">
+                  <a
+                    href={github}
+                    style={{ textDecoration: "none" }}
                     target="_blank"
                   >
-                    <a href={github} style={{ textDecoration: "none" }}>
-                      <nav className="row" style={{ textDecoration: "none" }}>
-                        <nav className="col w-100">Link</nav>
-                        <nav className="col">
-                          <FaLink size="20 " style={{ marginLeft: 150 }} />
-                        </nav>
+                    <nav style={{ display: "flex", flexDirection: "row" }}>
+                      <nav className="col w-100">Github</nav>
+                      <nav className="col">
+                        <FaGithub size="20 " style={{ marginLeft: 150 }} />
                       </nav>
-                    </a>
-                  </button>
-                )}
-              </div>
+                    </nav>
+                  </a>
+                </button>
+              )}
+              {live == "" || live == null ? null : (
+                <button type="button" className="modal-button " target="_blank">
+                  <a href={github}>
+                    <nav style={{ display: "flex", flexDirection: "row" }}>
+                      <nav className="col w-100">Link</nav>
+                      <nav className="col">
+                        <FaLink size="20 " style={{ marginLeft: 150 }} />
+                      </nav>
+                    </nav>
+                  </a>
+                </button>
+              )}
             </div>
           </div>
         </Modal.Body>

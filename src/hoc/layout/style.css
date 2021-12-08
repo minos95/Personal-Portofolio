@@ -12,6 +12,24 @@ ul {
   margin: 0px;
   padding: 0px;
 }
+a {
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
 
 /*-----------------header---------------------*/
 header {
@@ -93,10 +111,20 @@ arrow-icon1 {
 }
 .sub-section {
   min-height: 20vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+
 .item {
   position: relative;
   width: 48%;
+  margin-top: 25px;
+  border: solid 0.5px #d9dbdb;
+}
+.item:hover {
+  transition-delay: 3s;
+  box-shadow: 5px 5px 5px rgb(196, 194, 194);
 }
 .item img {
   width: 100%;
@@ -107,14 +135,21 @@ arrow-icon1 {
   font-size: 4vh;
   margin: 2%;
 }
+
 .item-subtitle {
   position: absolute;
   list-style: none;
   padding: 0;
+  margin: 0;
   top: 20%;
   overflow: hidden;
-
+  width: 100%;
   border-radius: 5px;
+}
+.portfolio-modal .ul {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
 }
 .item-subtitle-li {
   padding-left: 3%;
@@ -132,24 +167,34 @@ arrow-icon1 {
   flex-wrap: wrap;
   flex: 1;
 }
-.modal-col {
-  flex: 1;
+.modal-col1 {
+  maxwidth: "500px";
+}
+.modal-col2 {
 }
 
 .portfolio-modal img {
   width: 100%;
 }
-
+.modal-col2 .a {
+  color: white;
+}
 .modal-button {
   width: 100%;
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: 15px;
+
   color: white;
   font-weight: bold;
   background-color: #d98f07;
 }
+
 /*--------------------------About--------------------*/
+.about {
+  margin-top: 90px;
+}
 .about-row {
   display: flex;
   flex-direction: row;
@@ -173,25 +218,6 @@ arrow-icon1 {
   display: flex;
 }
 
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(50%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes slide-left {
-  from {
-    transform: translateX(50%);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 /*--------------------------footer------------------*/
 footer {
   left: 0;
@@ -208,4 +234,11 @@ input[type="email"],
 .copy_right {
   text-align: center;
   color: white;
+}
+
+/*---------------------------mobile style-----------------*/
+@media only screen and (max-width: 600px) {
+  .item {
+    width: 100%;
+  }
 }

@@ -58,11 +58,11 @@ const About = () => {
               <SiMongodb size={60} className="m-2 " />
             </div>
           </div>
-          <div className="mb-4" data-aos="fade-up" data-aos-delay="500">
+          <div className="mb-4">
             <h4 className="mb-3">
               <strong>tools</strong>
             </h4>
-            <div className="about-icon">
+            <div className="about-icon" data-aos="fade-up" data-aos-delay="500">
               <FaGithub size={60} className="m-2" />
               <SiHeroku size={60} className="m-2" />
               <FaDigitalOcean size={60} className="m-2" />
