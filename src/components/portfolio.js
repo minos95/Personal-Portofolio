@@ -4,7 +4,7 @@ import cisco from "../assets/items/3tierlabs.png";
 import prs from "../assets/items/screenshotprs.png";
 import scsclinical from "../assets/items/scsclinicalmanagement.jpg";
 import scsMpls from "../assets/items/screenshotMpls.png";
-
+import scstodo from "../assets/items/scstodo.png";
 const Portfolio = () => {
   const itemNetwork = [
     {
@@ -46,10 +46,18 @@ const Portfolio = () => {
       description: `For better management of the clinic, This software specially designed to facilitate several tasks and allow you to manage patients (Adding, modifying and deleting), calculate the number of daily, weekly, monthly and annual patients.
 calculate the number of hospitalized patients.
 Add for each patient the assessments carried out as well as the surgical interventions.
-calculate the number of interventions and group them by type, print the patient's consent for each intervention, print the patient file. This application is installed on your local network as a server to which you can connect the entire network architecture 
-of your establishment without forgetting that you can access it even in mobile .`,
+calculate the number of interventions and group them by type, print the patient's consent for each intervention, print the patient file. This application should be installed on your local network as a server 
+without forgetting that you can access it even in mobile .`,
       images: [scsclinical],
       github: "https://github.com/minos95/clinicalmanagement",
+      live: "",
+    },
+    {
+      title: "Todo App",
+      subtitle: ["Flask", "jinja", "Python", "HTML/CSS", "SQL Alchemy"],
+      description: `To organise your daily work this Application provide you the ability to manage your todo   `,
+      images: [scstodo],
+      github: "https://github.com/minos95/todo-application",
       live: "",
     },
   ];

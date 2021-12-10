@@ -57,7 +57,7 @@ const Item = (props) => {
                   })}
                 </ul>
 
-                <div style={{ marginTop: "100px", maxWidth: "500px" }}>
+                <div style={{ marginTop: "100px" }}>
                   <h5>
                     <strong>{description}</strong>
                   </h5>
