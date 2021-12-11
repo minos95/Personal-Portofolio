@@ -241,4 +241,8 @@ input[type="email"],
   .item {
     width: 100%;
   }
+  .item-subtitle {
+    font-size: 14px;
+    top: 28%;
+  }
 }
