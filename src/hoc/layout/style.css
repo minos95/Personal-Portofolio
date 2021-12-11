@@ -245,4 +245,7 @@ input[type="email"],
     font-size: 14px;
     top: 28%;
   }
+  .skills-col {
+    margin-top: 40px;
+  }
 }

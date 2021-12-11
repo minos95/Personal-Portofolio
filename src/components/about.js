@@ -35,12 +35,12 @@ const About = () => {
         <div className="about-col " data-aos="fade-right">
           <h5>
             Hello I'm Rahal ElAmine specialised in different Technology like
-            React &amp; Redux Flask &amp; jinja,javascript,nodejs,SQL,mongodb,
-            .I build Web Application, mobile app,and beatiful website for
+            React &amp; Redux Flask/jinja, Javascript, Nodejs, SQL, Mongodb.
+            <br />I build Web Application, Mobile app,and beatiful website for
             compagnies,and help them in networking solution,
           </h5>
         </div>
-        <div className="about-col">
+        <div className="about-col skills-col">
           <div className="mb-4">
             <h4 className="mb-3">
               <strong>Langage and Framework</strong>
