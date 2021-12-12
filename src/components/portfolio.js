@@ -5,6 +5,10 @@ import prs from "../assets/items/screenshotprs.png";
 import scsclinical from "../assets/items/scsclinicalmanagement.jpg";
 import scsMpls from "../assets/items/screenshotMpls.png";
 import scstodo from "../assets/items/scstodo.png";
+import sahat from "../assets/items/sahatatoute.jpg";
+import acmilan from "../assets/items/acmilan.jpg";
+import kdpFb1 from "../assets/items/collegerulledfootballBlue.png";
+import kdpKids from "../assets/items/coverkids.png";
 const Portfolio = () => {
   const itemNetwork = [
     {
@@ -61,6 +65,42 @@ without forgetting that you can access it even in mobile .`,
       live: "",
     },
   ];
+  const itemDesign = [
+    {
+      title: "Umra Promotion",
+      subtitle: ["photoshop"],
+      description:
+        "This is my favorite campaign because the client was so much fun and encouraged us to try things we had never done before",
+      images: [sahat],
+      github: "",
+      live: "",
+    },
+    {
+      title: "Ac Milan post",
+      subtitle: ["photoshop"],
+      description: "This is ac milan page after winning match",
+      images: [acmilan],
+      github: "",
+      live: "",
+    },
+    {
+      title: "Football Notebook Cover",
+      subtitle: ["photoshop"],
+      description:
+        "Cover college ruled notebook design for Amercain football fans published in amazon",
+      images: [kdpFb1],
+      github: "",
+      live: "",
+    },
+    {
+      title: "Kids Coloring Notebook Cover ",
+      subtitle: ["photoshop"],
+      description: "This cover for coloring notebook kids published in amazon",
+      images: [kdpKids],
+      github: "",
+      live: "",
+    },
+  ];
   const List = (list) => {
     return list.map((item, index) => {
       return (
@@ -96,7 +136,7 @@ without forgetting that you can access it even in mobile .`,
       </div>
       <div className="section">
         <h2>Design</h2>
-        <div className="sub-section"></div>
+        <div className="sub-section">{List(itemDesign)}</div>
       </div>
       <div className="section">
         <h2>Games</h2>
