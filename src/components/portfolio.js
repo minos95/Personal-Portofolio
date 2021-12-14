@@ -9,6 +9,7 @@ import sahat from "../assets/items/sahatatoute.jpg";
 import acmilan from "../assets/items/acmilan.jpg";
 import kdpFb1 from "../assets/items/collegerulledfootballBlue.png";
 import kdpKids from "../assets/items/coverkids.png";
+import coversoug from "../assets/items/coversoug.jpg";
 const Portfolio = () => {
   const itemNetwork = [
     {
@@ -72,6 +73,14 @@ without forgetting that you can access it even in mobile .`,
       description:
         "This is my favorite campaign because the client was so much fun and encouraged us to try things we had never done before",
       images: [sahat],
+      github: "",
+      live: "",
+    },
+    {
+      title: "Cover for website",
+      subtitle: ["photoshop"],
+      description: "Beautiful cover design for a page's website",
+      images: [coversoug],
       github: "",
       live: "",
     },

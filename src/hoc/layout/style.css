@@ -117,14 +117,16 @@ arrow-icon1 {
 }
 
 .item {
-  position: relative;
+  display: block;
   width: 48%;
   margin-top: 25px;
   border: solid 0.5px #d9dbdb;
+  transition: transform 0.2s;
+  margin: 0 auto;
 }
 .item:hover {
-  transition-delay: 3s;
   box-shadow: 5px 5px 5px rgb(196, 194, 194);
+  transform: scale(1.5);
 }
 .item img {
   width: 100%;
