@@ -121,11 +121,13 @@ arrow-icon1 {
   width: 48%;
   margin-top: 25px;
   border: solid 0.5px #d9dbdb;
-  transition: transform 0.2s;
+
+  transition: text-shadow 2s ease-in;
 }
 .item:hover {
-  transition-delay: 3s;
   box-shadow: 5px 5px 5px rgb(196, 194, 194);
+  text-shadow: 0px 0px 4px #f5f3d8;
+
   transform: scale(1.2);
 }
 .item img {
@@ -134,7 +136,8 @@ arrow-icon1 {
 }
 .item-title {
   position: absolute;
-  font-size: 4vh;
+  color: #4e4f50;
+  font-size: 5vh;
   margin: 2%;
 }
 
@@ -207,6 +210,10 @@ arrow-icon1 {
 .about-col {
   max-width: 600px;
 }
+.profile-col img {
+  float: left;
+  margin: 10px;
+}
 .about-list {
   display: flex;
   flex-direction: row;
@@ -218,6 +225,9 @@ arrow-icon1 {
 }
 .icon-language {
   display: flex;
+}
+.photo-profile {
+  border-radius: 70px;
 }
 
 /*--------------------------footer------------------*/

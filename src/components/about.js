@@ -21,6 +21,7 @@ import {
 } from "react-icons/si";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import profile from "../assets/profile/profile.jpg";
 
 const About = () => {
   useEffect(() => {
@@ -32,7 +33,13 @@ const About = () => {
         <strong>About</strong>
       </h1>
       <div className="about-row ">
-        <div className="about-col " data-aos="fade-right">
+        <div className="about-col profile-col " data-aos="fade-right">
+          <img
+            src={profile}
+            width="140"
+            height="140"
+            className="photo-profile"
+          />
           <h5>
             Hello I'm Rahal ElAmine specialised in different Technology like
             React &amp; Redux Flask/jinja, Javascript, Nodejs, SQL, Mongodb.

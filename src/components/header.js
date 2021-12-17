@@ -12,7 +12,7 @@ const Header = () => {
         expand="lg"
         bg="dark"
         variant="dark"
-        className="p-4"
+        className="p-2"
       >
         <Navbar.Brand href="#home">
           <img src={img} width="40" height="40" />
