@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Modal, Button } from "react-bootstrap";
+import { Modal, Button, Media } from "react-bootstrap";
 import { Img } from "react-image";
 import { FaGithub, FaLink } from "react-icons/fa";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
