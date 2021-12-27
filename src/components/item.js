@@ -24,14 +24,16 @@ const Item = (props) => {
         data-aos-delay="500"
         style={{ marginRight: "20px" }}
       >
-        <h1 className="item-title">
-          <strong>{title}</strong>
-        </h1>
-        <ul className="item-subtitle">
-          {subtitle.map((item) => {
-            return <li className="item-subtitle-li">{item}</li>;
-          })}
-        </ul>
+        <div class="item-header">
+          <h1 className="item-title">
+            <strong>{title}</strong>
+          </h1>
+          <ul className="item-subtitle">
+            {subtitle.map((item) => {
+              return <li className="item-subtitle-li">{item}</li>;
+            })}
+          </ul>
+        </div>
         <img src={images[0]} />
       </div>
       <Modal

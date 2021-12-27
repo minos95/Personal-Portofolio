@@ -134,19 +134,20 @@ arrow-icon1 {
   width: 100%;
   height: 100%;
 }
-.item-title {
+.item-header {
   position: absolute;
-  color: #4e4f50;
-  font-size: 5vh;
-  margin: 2%;
+  left: 2%;
+}
+.item-title {
+  color: #2d2e2e;
+  font-size: 35px;
 }
 
 .item-subtitle {
-  position: absolute;
   list-style: none;
   padding: 0;
   margin: 0;
-  top: 20%;
+
   overflow: hidden;
   width: 100%;
   border-radius: 5px;
@@ -254,9 +255,12 @@ input[type="email"],
   .item {
     width: 100%;
   }
+  .item-title {
+    font-size: 24px;
+  }
+
   .item-subtitle {
-    font-size: 14px;
-    top: 28%;
+    font-size: 13px;
   }
   .skills-col {
     margin-top: 40px;
