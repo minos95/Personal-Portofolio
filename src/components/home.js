@@ -80,6 +80,13 @@ const Home = () => {
                   data-aos="fade-down"
                   data-aos-delay="1900"
                 >
+                  <strong>Secure </strong>
+                </h1>
+                <h1
+                  className="title col"
+                  data-aos="fade-right"
+                  data-aos-delay="2100"
+                >
                   <strong>Enjoy!</strong>
                 </h1>
               </nav>

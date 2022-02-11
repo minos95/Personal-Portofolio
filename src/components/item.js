@@ -86,7 +86,11 @@ const Item = (props) => {
               )}
               {live == "" || live == null ? null : (
                 <button type="button" className="modal-button " target="_blank">
-                  <a href={github}>
+                  <a
+                    href={live}
+                    target="_blank"
+                    style={{ textDecoration: "none" }}
+                  >
                     <nav style={{ display: "flex", flexDirection: "row" }}>
                       <nav className="col w-100">Link</nav>
                       <nav className="col">

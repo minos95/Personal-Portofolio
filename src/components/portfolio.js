@@ -37,13 +37,14 @@ const Portfolio = () => {
 
         <div className="sub-section">{List(Listitems.itemNetwork)}</div>
       </div>
-      <div className="section">
-        <h2>Design</h2>
-        <div className="sub-section">{List(Listitems.itemDesign)}</div>
-      </div>
+
       <div className="section">
         <h2>Games</h2>
         <div className="sub-section">{List(Listitems.itemGame)}</div>
+      </div>
+      <div className="section">
+        <h2>Certification</h2>
+        <div className="sub-section">{List(Listitems.itemCertificat)}</div>
       </div>
     </div>
   );
