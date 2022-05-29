@@ -30,7 +30,7 @@ const Portfolio = () => {
       </div>
       <div className="section">
         <h2>Mobile Application</h2>
-        <div className="sub-section"></div>
+        <div className="sub-section">{List(Listitems.itemMobileApp)}</div>
       </div>
       <div className="section">
         <h2>Network</h2>

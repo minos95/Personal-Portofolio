@@ -2,7 +2,7 @@ const imageUrl = "assets/items/";
 export const Listitems = {
   itemMobileApp: [
     {
-      title: "Cisco CCNA Labs",
+      title: "W2 -Workout Classes & Healthy Recipes",
       subtitle: ["React native", "Express Api", "Mongodb", "firebase"],
       description: ` mobile application  build with react native as front-end , nodejs with epress api as back-end and mongodb as database ,for fun workout classes and healthy recipes`,
 
