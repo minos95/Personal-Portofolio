@@ -73,6 +73,14 @@ without forgetting that you can access it even in mobile .`,
       github: "https://github.com/minos95/todo-application",
       live: "",
     },
+    {
+      title: "Visit Oran",
+      subtitle: ["React"],
+      description: `This project built with react for olympic game event to guide foreigner and help them to visit oran `,
+      images: [imageUrl + "visit-oran.png"],
+      github: "https://github.com/minos95/visit-oran",
+      live: "https://visite-oran.netlify.app/",
+    },
   ],
   itemCertificat: [
     {
