@@ -60,10 +60,10 @@ without forgetting that you can access it even in mobile .`,
     {
       title: "Restaurant React App",
       subtitle: ["React", "Redux", "Api"],
-      description: `  `,
+      description: ` It is responsive website  built with react/redux fetch data from server api so that showcase dishes     `,
       images: [imageUrl + "scsReactProject.png"],
       github: "https://github.com/minos95/todo-application",
-      live: "",
+      live: "https://6334b8f48333f2006c777e4c--dulcet-gumdrop-e6ee66.netlify.app/",
     },
     {
       title: "Todo App",
