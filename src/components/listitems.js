@@ -58,11 +58,11 @@ without forgetting that you can access it even in mobile .`,
       live: "",
     },
     {
-      title: "Restaurant React App",
+      title: "Dishes React App",
       subtitle: ["React", "Redux", "Api"],
       description: ` It is responsive website  built with react/redux fetch data from server api so that showcase dishes     `,
       images: [imageUrl + "scsReactProject.png"],
-      github: "https://github.com/minos95/todo-application",
+      github: "https://github.com/minos95/Restaurant-react-web",
       live: "https://6334b8f48333f2006c777e4c--dulcet-gumdrop-e6ee66.netlify.app/",
     },
     {
