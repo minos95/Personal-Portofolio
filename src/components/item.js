@@ -24,7 +24,7 @@ const Item = (props) => {
         data-aos-delay="500"
         style={{ marginRight: "20px" }}
       >
-        <div class="item-header">
+        <div className="item-header">
           <h1 className="item-title">
             <strong>{title}</strong>
           </h1>
