@@ -61,7 +61,7 @@ const Item = (props) => {
                 </ul>
 
                 <div style={{ marginTop: "100px" }}>
-                  <h5>
+                  <h5 className="modal-description">
                     <strong>{description}</strong>
                   </h5>
                 </div>
