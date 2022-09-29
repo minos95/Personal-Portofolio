@@ -214,7 +214,7 @@ arrow-icon1 {
 }
 .modal-description {
   font-size: 16px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 /*--------------------------About--------------------*/
@@ -276,17 +276,17 @@ input[type="email"],
     width: 100%;
   }
   .item-title {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .item-subtitle {
-    font-size: 13px;
+    font-size: 12px;
   }
   .skills-col {
     margin-top: 40px;
   }
   .modal-title {
-    font-size: 20px;
+    font-size: 18px;
   }
   .item-subtitle-li {
     font-size: 13px;
@@ -301,10 +301,10 @@ input[type="email"],
     width: 100%;
   }
   .item-title {
-    font-size: 23px;
+    font-size: 18px;
   }
   .modal-title {
-    font-size: 20px;
+    font-size: 18px;
   }
   .item-subtitle-li {
     font-size: 12px;
@@ -313,7 +313,7 @@ input[type="email"],
     font-size: 15px;
   }
   .item-subtitle {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .skills-col {
