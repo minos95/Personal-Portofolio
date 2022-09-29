@@ -51,16 +51,16 @@ const Item = (props) => {
           <div className="modal-row">
             <div className="modal-col1">
               <div className="container " style={{ flexDirection: "column" }}>
-                <h4 className="title">
+                <h4 className="modal-title">
                   <strong>{title}</strong>
                 </h4>
-                <ul>
+                <ul className="modal-subtitle">
                   {subtitle.map((item) => {
                     return <li className="item-subtitle-li">{item}</li>;
                   })}
                 </ul>
 
-                <div style={{ marginTop: "100px" }}>
+                <div>
                   <h5 className="modal-description">
                     <strong>{description}</strong>
                   </h5>

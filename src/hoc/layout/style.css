@@ -11,6 +11,7 @@ ol,
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -138,28 +139,21 @@ arrow-icon1 {
 .item-header {
   position: absolute;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
 
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4));
-  height: 100%;
   padding: 5px;
 }
-.item-header:hover {
-  position: absolute;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.6);
-  height: 100%;
-  transition: 0.2;
-}
+
 .item-title {
   color: #353d3d;
-  font-size: 35px;
+  font-size: 26px;
 }
 
 .item-subtitle {
   list-style: none;
   padding: 0px;
   margin: 0px;
-
+  font-size: 12px;
   overflow: hidden;
   width: 100%;
   border-radius: 5px;
@@ -210,6 +204,17 @@ arrow-icon1 {
   color: white;
   font-weight: bold;
   background-color: #d98f07;
+}
+.modal-title {
+  font-size: 26px;
+  color: gray;
+}
+.modal-subtitle {
+  padding: 0;
+}
+.modal-description {
+  font-size: 16px;
+  margin-top: 40px;
 }
 
 /*--------------------------About--------------------*/
@@ -280,7 +285,7 @@ input[type="email"],
   .skills-col {
     margin-top: 40px;
   }
-  .title {
+  .modal-title {
     font-size: 20px;
   }
   .item-subtitle-li {
@@ -298,7 +303,7 @@ input[type="email"],
   .item-title {
     font-size: 23px;
   }
-  .title {
+  .modal-title {
     font-size: 20px;
   }
   .item-subtitle-li {
