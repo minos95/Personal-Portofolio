@@ -110,6 +110,9 @@ arrow-icon1 {
 .section {
   margin-top: 30px;
 }
+.section-title {
+  font-weight: bold;
+}
 .sub-section {
   min-height: 20vh;
   display: flex;
@@ -139,24 +142,49 @@ arrow-icon1 {
 .item-header {
   position: absolute;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
 
-  padding: 5px;
+  padding: 10px;
+
+  transition: 0.3s;
 }
 
 .item-title {
   color: #353d3d;
-  font-size: 26px;
+  font-size: 30px;
+  font-weight: 900;
 }
 
 .item-subtitle {
   list-style: none;
-  padding: 0px;
   margin: 0px;
+
+  padding: 0px;
   font-size: 12px;
   overflow: hidden;
+  opacity: 0;
   width: 100%;
-  border-radius: 5px;
+  transition: 0.3s;
+}
+.item-button {
+  position: absolute;
+  color: white;
+  background-color: #d98f07;
+  padding: 15px;
+  padding-left: 20px;
+  bottom: 30px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.item-header:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.item-header:hover .item-subtitle {
+  opacity: 1;
+}
+.item-header:hover .item-button {
+  opacity: 1;
 }
 .portfolio-modal .ul {
   margin: 0px;
@@ -166,6 +194,8 @@ arrow-icon1 {
 .item-subtitle-li {
   padding-left: 3%;
   padding-right: 3%;
+  padding-top: 0px;
+  padding-bottom: 3px;
   border-radius: 7px;
   margin-bottom: 2%;
   float: left;

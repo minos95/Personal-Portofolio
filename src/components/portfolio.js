@@ -25,25 +25,25 @@ const Portfolio = () => {
         <strong>My Best Work</strong>
       </h1>
       <div className="section">
-        <h2>Web Application</h2>
+        <h2 className="section-title">Web Application</h2>
         <div className="sub-section">{List(Listitems.itemWeb)}</div>
       </div>
       <div className="section">
-        <h2>Mobile Application</h2>
+        <h4 className="section-title">Mobile Application</h4>
         <div className="sub-section">{List(Listitems.itemMobileApp)}</div>
       </div>
       <div className="section">
-        <h2>Network</h2>
+        <h4 className="section-title">Network</h4>
 
         <div className="sub-section">{List(Listitems.itemNetwork)}</div>
       </div>
 
       <div className="section">
-        <h2>Games</h2>
+        <h4 className="section-title">Games</h4>
         <div className="sub-section">{List(Listitems.itemGame)}</div>
       </div>
       <div className="section">
-        <h2>Certification</h2>
+        <h4 className="section-title">Certification</h4>
         <div className="sub-section">{List(Listitems.itemCertificat)}</div>
       </div>
     </div>

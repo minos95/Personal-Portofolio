@@ -9,12 +9,14 @@ import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 const Item = (props) => {
   const [show, setShow] = useState(false);
+
   const { title, subtitle, github, description, images, live } = props;
 
   const handleClose = () => {
     setShow(false);
   };
   const handleShow = () => setShow(true);
+
   return (
     <>
       <div
@@ -33,6 +35,9 @@ const Item = (props) => {
               return <li className="item-subtitle-li">{item}</li>;
             })}
           </ul>
+          <div className="item-button " variant="warning">
+            See the project
+          </div>
         </div>
         <img src={images[0]} />
       </div>
