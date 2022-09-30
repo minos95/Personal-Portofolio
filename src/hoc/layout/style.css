@@ -350,4 +350,10 @@ input[type="email"],
   .modal-description {
     font-size: 13px;
   }
+  .item-header:hover .item-subtitle {
+    opacity: 0;
+  }
+  .item-header:hover .item-button {
+    opacity: 0;
+  }
 }
