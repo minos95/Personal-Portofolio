@@ -29,11 +29,11 @@ const Portfolio = () => {
         <div className="sub-section">{List(Listitems.itemWeb)}</div>
       </div>
       <div className="section">
-        <h4 className="section-title">Mobile Application</h4>
+        <h2 className="section-title">Mobile Application</h2>
         <div className="sub-section">{List(Listitems.itemMobileApp)}</div>
       </div>
       <div className="section">
-        <h4 className="section-title">Network</h4>
+        <h2 className="section-title">Network</h2>
 
         <div className="sub-section">{List(Listitems.itemNetwork)}</div>
       </div>
