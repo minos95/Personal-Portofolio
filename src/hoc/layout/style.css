@@ -108,7 +108,10 @@ arrow-icon1 {
   margin-top: 90px;
 }
 .section {
-  margin-top: 100px;
+  margin-top: 50px;
+}
+.section-certif {
+  margin-top: 50px;
 }
 .section-title {
   font-weight: bold;
@@ -131,7 +134,7 @@ arrow-icon1 {
 .item-header:hover {
   box-shadow: 5px 5px 5px rgb(196, 196, 194);
   text-shadow: 0px 0px 4px #e5dd73;
-  background-color: rgba(244, 245, 218, 0.6);
+  background-color: rgba(249, 249, 245, 0.6);
 }
 .item img {
   width: 100%;
