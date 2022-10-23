@@ -63,11 +63,7 @@ without forgetting that you can access it even in mobile .`,
       description: ` It is responsive website  built with react/redux fetch data from server api so that showcase dishes     `,
       images: [imageUrl + "scsReactProject.png"],
       github: "https://github.com/minos95/Restaurant-react-web",
-<<<<<<< HEAD
       live: "https://disheslover.netlify.app",
-=======
-      live: "https://disheslover.netlify.app/,
->>>>>>> 6a7580568f50ba615955c5ec3cfb7a729dff8ef4
     },
     {
       title: "Todo App",
