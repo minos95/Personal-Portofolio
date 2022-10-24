@@ -281,7 +281,8 @@ arrow-icon1 {
 
 /*--------------------------About--------------------*/
 .about {
-  margin-top: 90px;
+  background-color: #c4c7c7;
+  padding: 35px;
 }
 .about-row {
   display: flex;
@@ -313,7 +314,27 @@ arrow-icon1 {
 .photo-profile {
   border-radius: 70px;
 }
-
+.m-2 {
+  transition: all 5s ease;
+  animation: iconanim 1s infinite linear both;
+}
+@keyframes iconanim {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 /*--------------------------footer------------------*/
 footer {
   left: 0;
@@ -368,6 +389,13 @@ input[type="email"],
   }
   .item-certif {
     width: 100%;
+  }
+  .sub-section-certif {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
   }
   .item-title {
     font-size: 23px;
