@@ -1,7 +1,7 @@
 import React, { List } from "react";
 import { Item } from "./item";
 import { Listitems } from "./listitems";
-
+import { Certif } from "./certification";
 const Portfolio = () => {
   //const [itemNetwork, itemGame, itemWeb, itemDesign] = Listitems;
   const List = (list) => {
@@ -19,6 +19,7 @@ const Portfolio = () => {
       );
     });
   };
+
   return (
     <>
       <div id="portfolio" className="portfolio container">
@@ -43,10 +44,6 @@ const Portfolio = () => {
           <h4 className="section-title">Games</h4>
           <div className="sub-section">{List(Listitems.itemGame)}</div>
         </div>
-      </div>
-      <div className="section-certif">
-        <h4 className="section-title">Certification</h4>
-        <div className="sub-section">{List(Listitems.itemCertificat)}</div>
       </div>
     </>
   );

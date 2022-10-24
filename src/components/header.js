@@ -31,6 +31,12 @@ const Header = () => {
                 Portfolio
               </Link>
             </Nav.Link>
+            <Nav.Link href="#section-certif">
+              <Link to="certif" offset={-100} smooth={true} delay={0}>
+                Cetifications
+              </Link>
+            </Nav.Link>
+
             <Nav.Link href="#footer">
               <Link to="about" offset={-100} smooth={true} delay={0}>
                 About

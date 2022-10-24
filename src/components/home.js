@@ -6,7 +6,7 @@ import {
   FaArrowCircleDown,
 } from "react-icons/fa";
 
-import { Portfolio, About } from "./";
+import { Portfolio, About, Certif } from "./";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -97,10 +97,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="container">
-        <Portfolio />
-        <About />
-      </div>
+
+      <Portfolio />
+      <Certif />
+      <About />
     </div>
   );
 };
