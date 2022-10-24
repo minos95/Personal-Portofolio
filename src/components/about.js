@@ -54,27 +54,27 @@ const About = () => {
             </h4>
 
             <div className="about-icon " data-aos="fade-right">
-              <FaHtml5 size={60} className="m-2 " />
-              <SiJavascript size={60} className="m-2 " />
-              <FaBootstrap size={60} className="m-2 " />
-              <FaPython size={60} className="m-2 " />
-              <SiJinja size={60} className="m-2 " />
-              <FaReact size={60} className="m-2 " />
+              <FaHtml5 size={60} className="m-2 icon-anime" />
+              <SiJavascript size={60} className="m-2 icon-anime " />
+              <FaBootstrap size={60} className="m-2 icon-anime " />
+              <FaPython size={60} className="m-2 icon-anime " />
+              <SiJinja size={60} className="m-2 icon-anime " />
+              <FaReact size={60} className="m-2 icon-anime " />
 
-              <SiMysql size={60} className="m-2 " />
-              <SiMongodb size={60} className="m-2 " />
+              <SiMysql size={60} className="m-2  icon-anime" />
+              <SiMongodb size={60} className="m-2 icon-anime" />
             </div>
           </div>
-          <div className="mb-4">
+          <div className="mb-4 ">
             <h4 className="mb-3">
               <strong>tools</strong>
             </h4>
             <div className="about-icon" data-aos="fade-up" data-aos-delay="500">
-              <FaGithub size={60} className="m-2" />
-              <SiHeroku size={60} className="m-2" />
-              <FaDigitalOcean size={60} className="m-2" />
-              <FaAws size={60} className="m-2" />
-              <SiAdobephotoshop size={60} className="m-2" />
+              <FaGithub size={60} className="m-2 icon-anime" />
+              <SiHeroku size={60} className="m-2 icon-anime" />
+              <FaDigitalOcean size={60} className="m-2 icon-anime" />
+              <FaAws size={60} className="m-2 icon-anime" />
+              <SiAdobephotoshop size={60} className="m-2 icon-anime" />
             </div>
           </div>
           <div className="mb-4">
