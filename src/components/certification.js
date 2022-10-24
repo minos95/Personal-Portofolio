@@ -19,7 +19,7 @@ const ListCertif = (list) => {
 const Certif = () => {
   return (
     <div className="section-certif">
-      <h4 className="section-certif-title">Certification</h4>
+      <h4 className="section-certif-title">Certifications</h4>
       <div className="sub-section-certif  ">
         {ListCertif(Listitems.itemCertificat)}
       </div>
