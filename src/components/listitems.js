@@ -58,20 +58,17 @@ without forgetting that you can access it even in mobile .`,
       live: "",
     },
     {
-      title: "Dishes React App",
-      subtitle: ["React", "Redux", "Api"],
-      description: ` It is responsive website  built with react/redux fetch data from server api so that showcase dishes     `,
-      images: [imageUrl + "scsReactProject.png"],
-      github: "https://github.com/minos95/Restaurant-react-web",
-      live: "https://disheslover.netlify.app",
-    },
-    {
-      title: "Todo App",
-      subtitle: ["Flask", "jinja", "Python", "HTML/CSS", "SQL Alchemy"],
-      description: `To organise your daily work this Application provide you the ability to manage your todo   `,
-      images: [imageUrl + "scstodo.png"],
-      github: "https://github.com/minos95/todo-application",
-      live: "",
+      title: "jawellerysafir",
+      subtitle: ["Flask", "Javascript", "HTML/CSS", "SQL Alchemy", "Api"],
+      description: `Great application to manage jawellery market with greatly feature:
+- Managing users, articles and clients with CRUD operations.
+- Create sale orders and purchase orders and display them with helpful filters.
+- Payment with loan option.
+- Print invoice and payment receipts.
+- Awsome dashboard with sales and purchases statistics.`,
+      images: [imageUrl + "jawellery.png"],
+
+      live: "https://www.linkedin.com/feed/update/urn:li:activity:7066021578169298944/",
     },
     {
       title: "Visit Oran",
